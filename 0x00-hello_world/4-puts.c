@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
-  * main: Print out a string of characters
-  *
-  * Return: 0
+  * main- Print out a string of characters
+  * Return: 0 (Success)
   */
 int main(void)
 {
