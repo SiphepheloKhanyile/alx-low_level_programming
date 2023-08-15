@@ -9,7 +9,7 @@ void print_alphabet_x10(void)
 	int l;
 	char k;
 
-	for (l = 0; l <= 10; l++)
+	for (l = 0; l < 10; l++)
 	{
 		for (k = 'a'; k <= 'z'; k++)
 		{
