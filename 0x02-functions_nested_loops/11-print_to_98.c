@@ -12,7 +12,7 @@ void print_to_98(int v)
 	{
 		for (v = v; v <= 97; v++)
 		{
-			printf("%d, ", n);
+			printf("%d, ", v);
 		}
 		else
 		{
