@@ -2,7 +2,7 @@
 
 /**
   * time_table - Multipes of 9.
-  * Description: a function that prints the 9 times table, starting with 0.
+  * description: a function that prints the 9 times table, starting with 0.
   * Return: void
   */
 void times_table(void)
