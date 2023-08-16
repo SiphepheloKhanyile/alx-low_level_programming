@@ -20,7 +20,7 @@ void print_to_98(int v)
 		for (v = v; v > 98; v--)
 		{
 				printf("%d, ", v);
-		}	
+		}
 	}
 	printf("98\n");
 }
