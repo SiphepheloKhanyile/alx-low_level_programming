@@ -8,6 +8,8 @@
   */
 int _abs(int x)
 {
-	int z = abs(x);
+	int z;
+
+	z = abs(x);
 	return (z);
 }
