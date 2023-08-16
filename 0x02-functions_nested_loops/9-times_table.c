@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * time_table - Multipes of 9.
+  * times_table - Multipes of 9.
   * description: a function that prints the 9 times table, starting with 0.
   * Return: void
   */
