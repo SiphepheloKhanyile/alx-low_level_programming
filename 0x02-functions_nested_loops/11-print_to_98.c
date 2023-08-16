@@ -14,13 +14,13 @@ void print_to_98(int v)
 		{
 			printf("%d, ", v);
 		}
-		else
-		{
-			for (v = v; v > 98; v--)
-			{
-				printf("%d, ", v);
-			}
-		}
-		printf("98\n");
 	}
+	else
+	{
+		for (v = v; v > 98; v--)
+		{
+				printf("%d, ", v);
+		}	
+	}
+	printf("98\n");
 }
