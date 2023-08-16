@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
-  * time_table - a function that prints the 9 times table, starting with 0.
-  * Description: Printing the number 9 times table
+  * time_table - Multipes of 9.
+  * Description: a function that prints the 9 times table, starting with 0.
+  * Return: void
   */
 void times_table(void)
 {
