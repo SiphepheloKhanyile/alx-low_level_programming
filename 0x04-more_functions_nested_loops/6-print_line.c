@@ -2,6 +2,7 @@
 
 /**
   * print_line - a function that draws a straight line in the terminal.
+  * @n: number of dashes
   * Return: void
   */
 void print_line(int n)
@@ -14,6 +15,10 @@ void print_line(int n)
 		{
 			_putchar('_');
 		}
+		_putchar('\n');
+	}
+	else if (n == 0)
+	{
 		_putchar('\n');
 	}
 	else
