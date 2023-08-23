@@ -10,7 +10,7 @@ void rev_string(char *s)
 	char swapper;
 	int a, counter;
 
-	count = 0;
+	counter = 0;
 	while (*(s + counter) != '\0')
 	{
 		counter++;
