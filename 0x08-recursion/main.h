@@ -12,4 +12,6 @@ int _find_root(int n, int y);
 int is_prime_number(int n);
 int for_prime(int n, int st);
 int is_palindrome(char *s);
+int find_len(char *s);
+int check_pali(char *s, int leng, int ind);
 #endif /*MAIN_H*/

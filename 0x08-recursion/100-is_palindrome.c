@@ -23,10 +23,10 @@ int find_len(char *s)
 {
 	int leng = 0;
 
-	if (*(s + len))
+	if (*(s + leng))
 	{
 		leng++;
-		leng += find_len(s + len);
+		leng += find_len(s + leng);
 	}
 	return (leng);
 }
