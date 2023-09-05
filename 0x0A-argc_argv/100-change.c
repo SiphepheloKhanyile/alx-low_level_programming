@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int cents;
-	int coins[]= {25,10,5,2,1};
+	int coins[] = {25, 10, 5, 2, 1};
 	int numCoins;
 	int i, count = 0;
 
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	if (cents < 0)
 	{
 		printf("0\n");
-		return 0;
+		return (0);
 	}
 	numCoins = sizeof(coins) / sizeof(coins[0]);
 	for (i = 0; i < numCoins; i++)
