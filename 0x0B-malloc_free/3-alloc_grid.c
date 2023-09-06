@@ -8,37 +8,37 @@
   */
 int **alloc_grid(int width, int height)
 {
-	int **dGrid, z, v;
+	int **var, z, v;
 
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
-	2dGrid == malloc(sizeof(int *) * height);
-	if (!dGrid)
+	var == malloc(sizeof(int *) * height);
+	if (!var)
 	{
 		return (NULL);
 	}
 	v = 0;
 	while (v < height)
 	{
-		*(dGrid + v) = malloc(width * sizeof(int));
-		if (!(*(2dGrid + y)))
+		*(var + v) = malloc(width * sizeof(int));
+		if (!(*(var + v)))
 		{
 			while (v--)
 			{
-				free(*(dGrid + y));
+				free(*(var + y));
 			}
-			free(dGrid);
+			free(var);
 			return (NULL);
 		}
 		z = 0;
 		while (z < width)
 		{
-			*((*dgrid + v) + z) = 0;
+			*((*var + v) + z) = 0;
 			z++;
 		}
 		v++;
 	}
-	return (2dGrid);
+	return (var);
 }
