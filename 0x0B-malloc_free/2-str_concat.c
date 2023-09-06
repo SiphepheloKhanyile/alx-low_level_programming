@@ -2,6 +2,23 @@
 #include <string.h>
 #include "main.h"
 /**
+  * stingLength - get string length
+  * @z: string input
+  * Return: string length
+  */
+int stringLength(char *x)
+{
+	int length = 0;
+
+	while (*x)
+	{
+		x++;
+		length++;
+	}
+	return (length);
+}
+
+/**
   * str_concat - a function that concatenates two strings.
   * @s1: string 1
   * @s2: STRING 2
@@ -9,9 +26,7 @@
   */
 char *str_concat(char *s1, char *s2)
 {
-	size_t length1;
-	size_t length2;
-	char *conc;
+	char *conc, *conc2;
 
 	if (s1 == NULL)
 	{
@@ -21,14 +36,24 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	length1 = strlen(s1);
-	length2 = strlen(s2);
-	conc = malloc((length1 + length2 + 1) * sizeof(char));
-	if (conc == NULL)
+	conc = malloc(sizeof(char) * (stringLength(s1) + stringLength(s2)) + 1);
+	if (!conc)
 	{
 		return (NULL);
 	}
-	strcpy(conc, s1);
-	strcpy(conc, s2);
+	conc2 = conc;
+	while (*s1)
+	{
+		*conc2 = *s1;
+		conc2++;
+		s1++;
+	}
+	while (*s2)
+	{
+		*conc2 = *s2;
+		conc2++;
+		s2++;
+	}
+	*conc2 = '\0';
 	return (conc);
 }
