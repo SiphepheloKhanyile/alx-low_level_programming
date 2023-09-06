@@ -2,8 +2,8 @@
 #include <string.h>
 #include "main.h"
 /**
-  * stingLength - get string length
-  * @z: string input
+  * stringLength - get string length
+  * @x: string input
   * Return: string length
   */
 int stringLength(char *x)
