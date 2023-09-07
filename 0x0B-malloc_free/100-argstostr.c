@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 	char *string;
 	int a, b, c, lent;
 
-	if (ac == 0 || av NULL)
+	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
@@ -36,7 +36,7 @@ char *argstostr(int ac, char **av)
 	{
 		lent = lent + (stringL(av[a]) + 1);
 	}
-	string = malloc(sizeof(char)  lent + 1);
+	string = malloc(sizeof(char) *  lent + 1);
 	if (string == NULL)
 	{
 		return (NULL);
