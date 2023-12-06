@@ -2,9 +2,8 @@
 
 /**
  * hash_djb2 - hashes keys for hash table
- * @str: string to be hashed.
- *
- * Return: the hash value.
+ * @str: The string to be hashed.
+ * Return: hash value.
  */
 unsigned long int hash_djb2(const unsigned char *str)
 {
